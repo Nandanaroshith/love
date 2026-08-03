@@ -1,0 +1,389 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+
+body{
+    background:#ffe6ef;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    overflow:hidden;
+}
+
+
+/* PASSWORD PAGE + COVER PAGE */
+
+#passwordPage,
+#coverPage{
+
+    position:absolute;
+    width:100%;
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+}
+
+
+#coverPage{
+
+    display:none;
+    background:linear-gradient(#ff9a9e,#fad0c4);
+
+}
+
+
+
+
+/* IMAGES */
+
+img{
+
+    width:260px;
+    border-radius:20px;
+    box-shadow:0 0 20px pink;
+    margin-bottom:20px;
+
+}
+
+
+
+
+input{
+
+    padding:12px;
+    width:250px;
+    border-radius:10px;
+    border:none;
+    outline:none;
+    font-size:18px;
+
+}
+
+
+
+
+button{
+
+    padding:12px 25px;
+    border:none;
+    border-radius:30px;
+    background:#ff4d88;
+    color:white;
+    font-size:18px;
+    cursor:pointer;
+    margin-top:20px;
+
+}
+
+
+button:hover{
+
+    background:#ff1f66;
+
+}
+
+
+
+
+h1{
+
+    color:#d6005c;
+    margin-bottom:15px;
+
+}
+
+
+h2{
+
+    margin-bottom:15px;
+
+}
+
+
+
+p{
+
+    text-align:center;
+    font-size:18px;
+    margin-top:10px;
+
+}
+
+
+#error{
+
+    color:red;
+
+}
+
+
+
+
+/* BEGINNING PAGE */
+
+
+#beginningPage{
+
+    display:none;
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:#fff5f8;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+    overflow:auto;
+
+}
+
+
+
+.photo-container{
+
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+    justify-content:center;
+    margin-top:20px;
+
+}
+
+
+
+.story-photo{
+
+    width:220px;
+    border-radius:20px;
+    box-shadow:0 0 15px pink;
+
+}
+
+
+
+.story{
+
+    margin-top:30px;
+    max-width:700px;
+    font-size:20px;
+    text-align:center;
+    line-height:1.8;
+    padding:20px;
+
+}
+
+
+
+
+
+/* JOURNEY PAGE */
+
+
+#journeyPage{
+
+    display:none;
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:#fff0f5;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    padding:20px;
+
+}
+
+
+
+.journey-card{
+
+    text-align:center;
+    margin-top:20px;
+
+}
+
+
+
+.journey-photo{
+
+    width:280px;
+    border-radius:20px;
+    box-shadow:0 0 20px pink;
+
+}
+
+
+
+
+
+/* PART 4 MEMORY PAGE */
+
+
+#memoryPage{
+
+    display:none;
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:#fff0f5;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+
+}
+
+
+
+.memories-section{
+
+    width:100%;
+    height:100%;
+    text-align:center;
+    padding-top:40px;
+
+}
+
+
+
+.memory-intro h1{
+
+    font-size:35px;
+    color:#c2185b;
+
+}
+
+
+
+.memory-intro p{
+
+    color:#777;
+
+}
+
+
+
+.memory-slider{
+
+    position:relative;
+    width:300px;
+    height:400px;
+    margin:30px auto;
+
+}
+
+
+
+
+.memory{
+
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    opacity:0;
+    transform:scale(0.8);
+    transition:1.5s ease;
+
+}
+
+
+
+
+.memory img{
+
+    width:300px;
+    height:350px;
+    object-fit:cover;
+    border-radius:25px;
+    box-shadow:0 0 20px pink;
+
+}
+
+
+
+
+.memory h2{
+
+    font-family:cursive;
+    color:#d81b60;
+    font-size:22px;
+    margin-top:15px;
+
+}
+
+
+
+.memory.active{
+
+    opacity:1;
+    transform:scale(1);
+
+}
+
+
+
+
+
+/* PART 5 HANDWRITTEN LOVE LETTER */
+
+
+#letterPage{
+
+    display:none;
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:#f8e7c9;
+    justify-content:center;
+    align-items:center;
+    padding:25px;
+
+}
+
+
+
+.letter-paper{
+
+    background:#fff8e7;
+    width:90%;
+    max-width:650px;
+    min-height:500px;
+    padding:45px;
+    border-radius:10px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.2);
+    text-align:center;
+
+}
+
+
+
+
+.letter-paper h1{
+
+    font-family:cursive;
+    color:#b02a5b;
+    font-size:38px;
+
+}
+
+
+
+
+#letterText{
+
+    margin-top:30px;
+    font-family:"Brush Script MT", cursive;
+    font-size:24px;
+    line-height:1.8;
+    color:#5c4033;
+    white-space:pre-line;
+
+}

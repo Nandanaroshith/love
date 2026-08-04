@@ -116,7 +116,7 @@ window.onload = function () {
 // LOVE LETTER
 // ==============================
 
-let letterMessage = `My Dearest Love ❤️
+let letterMessage = `My Dearest Sidhuu ❤️
 
 Happy 2nd Anniversary.
 
@@ -149,7 +149,7 @@ And forever.
 Happy Anniversary ❤️
 
 Forever Yours,
-Nandana ❤️`;
+Duduu❤️`;
 
 let letterIndex = 0;
 let typingTimer;

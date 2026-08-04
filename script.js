@@ -15,13 +15,12 @@ function checkPassword() {
        // Play background music from 36 seconds
 let music = document.getElementById("bgMusic");
 
-music.currentTime = 36;
+music.addEventListener("canplay", function () {
+    music.currentTime = 36;
+    music.play();
+}, { once: true });
 
-music.play().then(() => {
-    // Music starts immediately from 36 seconds
-}).catch(err => {
-    console.log(err);
-});
+music.load();
 
     } else {
 

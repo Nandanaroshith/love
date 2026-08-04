@@ -12,9 +12,16 @@ function checkPassword() {
         document.getElementById("coverPage").style.display = "flex";
 
         // Play background music
-        let music = document.getElementById("bgMusic");
-        music.currentTime = 36; // Change this if you want another starting point
-        music.play();
+       // Play background music from 36 seconds
+let music = document.getElementById("bgMusic");
+
+music.addEventListener("loadedmetadata", function () {
+    music.currentTime = 36;
+}, { once: true });
+
+music.play().catch(function (error) {
+    console.log(error);
+});
 
     } else {
 
